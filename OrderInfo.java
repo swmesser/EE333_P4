@@ -9,5 +9,8 @@ package OMS;
  */
 
 public class OrderInfo {
-
+    private String id;
+    private String name;
+    private double subTotal;
+    private double total;
 }
