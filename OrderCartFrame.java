@@ -50,7 +50,7 @@ public class OrderCartFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        customerInfoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        customerInfoPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel4.setText("ID:");
 
@@ -127,28 +127,15 @@ public class OrderCartFrame extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel1.setText("Order Number:");
 
-        orderNumberTextField.setText("jTextField1");
-        orderNumberTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderNumberTextFieldActionPerformed(evt);
-            }
-        });
-
         jLabel2.setText("Subtotal:");
-
-        jTextField1.setText("jTextField1");
 
         jLabel3.setText("Tax:");
 
-        taxTextField.setText("jTextField2");
-
         jLabel9.setText("Total:");
-
-        totalTextField.setText("jTextField2");
 
         jButton1.setText("Order");
 
@@ -166,11 +153,10 @@ public class OrderCartFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(orderNumberTextField)
-                        .addComponent(jTextField1)
-                        .addComponent(taxTextField)
-                        .addComponent(totalTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)))
+                    .addComponent(orderNumberTextField)
+                    .addComponent(jTextField1)
+                    .addComponent(taxTextField)
+                    .addComponent(totalTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -227,10 +213,6 @@ public class OrderCartFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void orderNumberTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderNumberTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_orderNumberTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
