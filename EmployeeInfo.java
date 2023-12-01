@@ -20,6 +20,10 @@ public final class EmployeeInfo extends UserInfo {
         Unknown
     }
     
+    /**
+     * Pushing information to CSV format for export
+     * @return 
+     */
     @Override
     public String toCSV(){
         String output = "";
@@ -27,11 +31,31 @@ public final class EmployeeInfo extends UserInfo {
         return output;
     }
     
+    /**
+     * Pushing information to XML format for export
+     * @return 
+     */
     @Override
     public String toXML(){
         String output = "";
         
         return output;
+    }
+    
+    /**
+     * Pulling information from singular line in CSV format for import
+     * @param input 
+     */
+    public void fromCSV( String input ){
+        
+    }
+    
+    /**
+     * Pulling information from XML formatted string for import
+     * @param input 
+     */
+    public void fromXML( String input ){
+        
     }
 
     /**

@@ -8,10 +8,10 @@ package OMS;
  * Vers: 1.0.0 Nov 30, 2023 SWM - Original Coding
  * Desc: Driver for testing concepts
  */
-public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
+public class EmployeeOrderMainFrame extends javax.swing.JFrame {
 
     /** Creates new form EmployeeOrdersFrame */
-    public EmployeeOrderManagementFrame() {
+    public EmployeeOrderMainFrame() {
         initComponents();
     }
 
@@ -34,6 +34,8 @@ public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         ordersTable = new javax.swing.JTable();
+        workOrderButton = new javax.swing.JButton();
+        deleteOrderButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,10 +47,12 @@ public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
 
         nameTextField.setText("John Doe");
 
+        returnButton.setBackground(new java.awt.Color(153, 153, 153));
         returnButton.setText("Return");
 
         roleTextField.setText("Associate");
 
+        settingsButton.setBackground(new java.awt.Color(153, 153, 153));
         settingsButton.setText("Settings");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -99,21 +103,37 @@ public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(ordersTable);
 
+        workOrderButton.setBackground(new java.awt.Color(0, 153, 0));
+        workOrderButton.setText("Enter Order");
+
+        deleteOrderButton.setBackground(new java.awt.Color(204, 0, 51));
+        deleteOrderButton.setText("Delete Order");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(deleteOrderButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(workOrderButton)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(workOrderButton)
+                    .addComponent(deleteOrderButton))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -157,26 +177,29 @@ public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EmployeeOrderManagementFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeeOrderMainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EmployeeOrderManagementFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeeOrderMainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EmployeeOrderManagementFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeeOrderMainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EmployeeOrderManagementFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EmployeeOrderMainFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EmployeeOrderManagementFrame().setVisible(true);
+                new EmployeeOrderMainFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton deleteOrderButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -187,6 +210,7 @@ public class EmployeeOrderManagementFrame extends javax.swing.JFrame {
     private javax.swing.JButton returnButton;
     private javax.swing.JTextField roleTextField;
     private javax.swing.JButton settingsButton;
+    private javax.swing.JButton workOrderButton;
     // End of variables declaration//GEN-END:variables
 
     //Import/Export

@@ -54,6 +54,9 @@ public class CustomerProductFrame extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         returnButton = new javax.swing.JButton();
         accountButton = new javax.swing.JButton();
+        categoryLabel = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        subCategoryLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -269,12 +272,24 @@ public class CustomerProductFrame extends javax.swing.JFrame {
 
         accountButton.setText("Account");
 
+        categoryLabel.setText("Category");
+
+        jLabel12.setText(">");
+
+        subCategoryLabel.setText("Subcategory");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(categoryLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(subCategoryLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(returnButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(accountButton)
@@ -286,7 +301,10 @@ public class CustomerProductFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(returnButton)
-                    .addComponent(accountButton))
+                    .addComponent(accountButton)
+                    .addComponent(categoryLabel)
+                    .addComponent(jLabel12)
+                    .addComponent(subCategoryLabel))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -377,9 +395,11 @@ public class CustomerProductFrame extends javax.swing.JFrame {
     private javax.swing.JTable attributeTable;
     private javax.swing.JTextField availabilityTextField;
     private javax.swing.JButton cartButton;
+    private javax.swing.JLabel categoryLabel;
     private javax.swing.JTextField descriptionTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -403,6 +423,7 @@ public class CustomerProductFrame extends javax.swing.JFrame {
     private javax.swing.JButton returnButton;
     private javax.swing.JTextField seriesTextField;
     private javax.swing.JLabel stockLabel;
+    private javax.swing.JLabel subCategoryLabel;
     // End of variables declaration//GEN-END:variables
 
 }

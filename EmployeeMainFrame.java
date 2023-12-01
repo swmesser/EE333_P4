@@ -42,10 +42,13 @@ public class EmployeeMainFrame extends javax.swing.JFrame {
 
         jLabel1.setText("Task Selection:");
 
+        goOrderButton.setBackground(new java.awt.Color(153, 153, 153));
         goOrderButton.setText("Go to Order Management");
 
+        goInventoryButton.setBackground(new java.awt.Color(153, 153, 153));
         goInventoryButton.setText("Go to Inventory Management");
 
+        goCustomerButton.setBackground(new java.awt.Color(153, 153, 153));
         goCustomerButton.setText("Go to Customer Management");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

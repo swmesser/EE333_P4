@@ -97,16 +97,25 @@
         </Component>
         <Component class="javax.swing.JButton" name="goOrderButton">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Go to Order Management"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="goInventoryButton">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Go to Inventory Management"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="goCustomerButton">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Go to Customer Management"/>
           </Properties>
         </Component>
