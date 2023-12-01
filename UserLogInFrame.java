@@ -43,11 +43,7 @@ public class UserLogInFrame extends javax.swing.JFrame {
 
         jLabel2.setText("Username:");
 
-        userNameTextField.setText("jTextField1");
-
         jLabel3.setText("Password:");
-
-        userPasswordTextField.setText("jTextField1");
 
         javax.swing.GroupLayout loginPanelLayout = new javax.swing.GroupLayout(loginPanel);
         loginPanel.setLayout(loginPanelLayout);
